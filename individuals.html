@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="individuals.css">
+    <title>Individuals Carbon Footprint Points calculator</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" class="img-responsive img-rounded"></a>
+            </div>
+
+           <!--collapse div-->
+           <div class="collapse navbar-collapse navbar-right" id="nav1">
+                 <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Form</a></li>
+                    <li><a href="#">More Information</a></li>
+                 </ul>
+             </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <form action="#">
+            <div class="row" id="div1">
+                <div class="col-sm-6 part1">
+                    <img src="images/form_img1.png" alt="form-img-1" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6 part2">
+                    <div class="form-group text-center">
+                        <h3>Count the members of your household</h3><br>
+                        <input type="text" class="form-control" id="input1" placeholder="e.g. 5"><br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    
+    
+            <div class="row" id="div2">
+                <div class="col-sm-6  part1">
+                    <img src="images/form_img2.png" alt="form-img-2" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6  part2">
+                    <div class="form-group text-center">
+                        <h3>Consider the size of the house</h3><br>
+                        <select name="dropdown1" id="dropdown1" class="form-control">
+                            <option value="1">Large sized</option>
+                            <option value="2">Medium sized</option>
+                            <option value="3">Small sized</option>
+                            <option value="4">Apartment</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    
+           <div class="row" id="div3">
+               <div class="col-sm-6  part1">
+                   <img src="images/form_img3.png" alt="form-img-3" class="img-resposive img-rounded">
+               </div>
+               <div class="col-sm-6  part2">
+                   <div class="form-group text-center">
+                       <h3>Evaluate your food choices</h3><br>
+                       <select name="dropdown2" id="dropdown2" class="form-control">
+                           <option value="1">domestic meat on daily basis</option>
+                           <option value="2">domestic meat a few times per week</option>
+                           <option value="3">vegetarian</option>
+                           <option value="4">vegan or eat only wild meat</option>
+                           <option value="5">prepackaged convinience food such as frozen pizza, cereal or potato chips</option>
+                           <option value="6">good balance of fresh and convinience food</option>
+                           <option value="7">fresh, locally grown or hunted food</option>
+                       </select>
+                   </div>
+               </div>
+           </div>
+           <hr>
+    
+           <div class="row" id="div4">
+               <div class="col-sm-6  part1">
+                   <img src="images/form_img4.png" alt="form-img-4" class="img-responsive img-rounded"> 
+               </div>
+               <div class="col-sm-6  part2">
+                   <div class="form-group text-center">
+                       <h3>Examine your water consumption</h3><br>
+                       <h5 style="color:rgb(128, 123, 123);">consider how many times per week you run your dishwasher and/or washing machine</h5>
+                       <select name="dropdown3" id="dropdown3" class="form-control">
+                           <option value="1">more than 9 times per week(dishwasher and/or washing machine)</option>
+                           <option value="2">4 to 9 times per week(dishwasher and/or washing machine)</option>
+                           <option value="3">1 to 3 times per week(dishwasher and/or washing machine)</option>
+                           <option value="4">do not use diswaster and/or washing machine</option>
+                       </select>
+                   </div>
+               </div>
+            </div>
+            <hr>
+    
+            <div class="row" id="div5">
+                <div class="col-sm-6 part1">
+                    <img src="images/form_img5.png" alt="form-img-5" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6  part2">
+                    <div class="form-group text-center">
+                        <h3>Determine how many household purchases you make each year</h3><br>
+                        <select name="dropdown4" id="dropdown4" class="form-control">
+                            <option value="1">purchase more than 7 new items(furnitures,electronics or other household gadgets)</option>
+                            <option value="2">purchase between 5 and 7 items(furnitures,electronics or other household gadgets)</option>
+                            <option value="3">purchase between 3 and 5 items(furnitures,electronics or other household gadgets)</option>
+                            <option value="4">purchase less than 3 items(furnitures,electronics or other household gadgets)</option>
+                            <option value="5">purchase almost nothing or purchase only secondhand items(furnitures,electronics or other household gadgets)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="row" id="div6">
+                <div class="col-sm-6 part1">
+                    <img src="images/form_img6.png" alt="form-img-6" class="img-resposive img-rounded">
+                </div>
+                <div class="col-sm-6  part2">
+                    <div class="form-group">
+                        <h3>Examine how much waste you produce</h3><br>
+                        <select name="dropdown5" id="dropdown5" class="form-control">
+                            <option value="1">fill 4 garbage cans each week</option>
+                            <option value="2">fill 3 garbage cans each week</option>
+                            <option value="3">fill 2 garbage cans each week</option>
+                            <option value="4">fill 1 garbage cans each week</option>
+                            <option value="5">fill half a garbage can or less each week</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    
+            <div class="row" id="div7">
+                <div class="col-sm-6 part1">
+                    <img src="images/form_img7.png" alt="form-img-7" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6 part2">
+                    <div class="form-group text-center">
+                        <h3>Identify the amout of waster that you recycle</h3><br>
+                        <select name="dropdown6" id="dropdown6" class="form-control">
+                            <option value="1">do not recycle</option>
+                            <option value="2">recycle Glass</option>
+                            <option value="3">recycle Plastic</option>
+                            <option value="4">recycle Paper</option>
+                            <option value="5">recycle Aluminium</option>
+                            <option value="6">recycle Steel</option>
+                            <option value="7">recycle Food waste(composting)</option>
+                        </select><br><br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" id="div7">
+                <div class="col-sm-6 part1">
+                    <img src="images/type_of_car.png" alt="form-img-8" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6 part2">
+                    <div class="form-group text-center">
+                        <h3>Tally up your annual transportation scores</h3><br>
+                        <select name="dropdown7" id="dropdown7" class="form-control">
+                            <option value="1">use personal vehicle and travel more than 15,000 miles per year</option>
+                            <option value="2">use personal vehicle and travel between 10,000 to 15,000 miles per year</option>
+                            <option value="3">use personal vehicle and travel between 1,000 to 10,000 miles per year</option>
+                            <option value="4">use personal vehicle and travel less than 1,000 miles per year</option>
+                            <option value="5">use public vehicle and travel more than 20,000 miles per year</option>
+                            <option value="6">use public vehicle and travel between 15,000 to 20,000 miles per year</option>
+                            <option value="7">use public vehicle and travel between 10,000 to 15,000 miles per year</option>
+                            <option value="8">use public vehicle and travel between 1,000 to 10,000 miles per year</option>
+                            <option value="9">use public vehicle and travel less than 1,000 miles per year</option>
+                        </select><br><br>
+                        <button class="btn btn-success" onclick="calculate_Carbon_Footprint_Points()">CALCULATE</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </form>
+    </div><br><br>
+
+    <!--footer section-->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <img src="images/logo.png" alt="logo" class="img img-responsive img-rounded" id="footer_logo"><br><br>
+                <h5 style="color:white">MyCarbon<sub>2</sub> is wholly dedicated to</h5>
+                <h5 style="color:white">to help individuals, small businesses &</h5>
+                <h5 style="color:white">big businesses to understand what exactly is</h5>
+                <h5 style="color:white">Carbon Footprint and how to cut the</h5>
+                <h5 style="color:white">carbon emissions to save planet Earth</h5><br>
+                <h6 style="color:white">Follow us on:</h6>
+                <a href="#/"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h3 style="color:white;">Learn about Carbon Footprint</h3>
+                <hr>
+                <ul style="color:white;list-style-type: none;">
+                    <a href="index.html" class="list"><li>Carbon Footprint overview</li></a><br>
+                    <a href="#" class="list"><li>Carbon Footprint survey</li></a><br>
+                    <a href="#" class="list"><li>Carbon Footprint by Country</li></a><br>
+                    <a href="#" class="list"><li>TED'x Talk: The Carbon Literacy Revolution</li></a>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h2 style="color:white;">Navigation</h2>
+                <hr>
+                <ul style="color:white; list-style-type: none;">
+                    <a href="index.html" class="list"><li>Home</li></a><br>
+                    <a href="#" class="list"><li>About Us</li></a><br>
+                    <a href="#" class="list"><li>Contact Us</li></a><br>
+                    <a href="#" class="list"><li>More Information</li></a>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h2 style="color:white;">Subscribe</h2>
+                <hr>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-Mail"><br>
+                        <button class="btn btn-default" id="email_btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculate_Carbon_Footprint_Points(){
+            //variable "footprint_points" to store the footprint points of an individual
+            var footprint_points=0;
+
+            //variable "number_of_households" to store the number of households present in individuals house
+            var number_of_households=document.getElementById("input1").value;
+
+            if(number_of_households==""){
+                alert("please enter the number of households");
+                return;
+            }
+
+            if(number_of_households==1){
+                footprint_points+=14;
+            }
+            else if(number_of_households==2){
+                footprint_points+=12;
+            }
+            else if(number_of_households==3){
+                footprint_points+=10;
+            }
+            else if(number_of_households==4){
+                footprint_points+=8;
+            }
+            else if(number_of_households==5){
+                footprint_points+=6;
+            }
+            else if(number_of_households==6){
+                footprint_points+=4;
+            }
+            else if(number_of_households==7){
+                footprint_points+=2;
+            }
+            else{
+                footprint_points+=0;
+            }
+    
+
+            //variable "size_of_house" to store the size of individuals house
+            var size_of_house=document.getElementById("dropdown1").value;
+
+            if(size_of_house==1){
+                footprint_points+=10;
+            }
+            else if(size_of_house==2){
+                footprint_points+=7;
+            }
+            else if(size_of_house==3){
+                footprint_points+=4;
+            }
+            else if(size_of_house==4){
+                footprint_points+=2;
+            }
+        
+
+            //variable "food_choices" to store the food choices of an individual
+            var food_choices=document.getElementById("dropdown2").value;
+
+
+            if(food_choices==1){
+                footprint_points+=10;
+            }
+            else if(food_choices==2){
+                footprint_points+=8;
+            }
+            else if(food_choices==3){
+                footprint_points+=4;
+            }
+            else if(food_choices==4){
+                footprint_points+=2;
+            }
+            else if(food_choices==5){
+                footprint_points+=12;
+            }
+            else if(food_choices==6){
+                footprint_points+=6;
+            }
+            else if(food_choices==7){
+                footprint_points+=2;
+            }
+
+
+
+            //variable "water_consumption" to store the water consumption of an individual
+            var water_consumption=document.getElementById("dropdown3").value;
+
+
+            if(water_consumption==1){
+                footprint_points+=0;
+            }
+            else if(water_consumption==2){
+                footprint_points+=1;
+            }
+            else if(water_consumption==3){
+                footprint_points+=2;
+            }
+            else if(water_consumption==4){
+                footprint_points+=3;
+            }
+
+            //variable "household_purchases" to store the number of household purchases the individual makes
+            var household_purchases=document.getElementById("dropdown4").value;
+
+            if(household_purchases==1){
+                footprint_points+=10;
+            }
+            else if(household_purchases==2){
+                footprint_points+=8;
+            }
+            else if(household_purchases==3){
+                footprint_points+=6;
+            }
+            else if(household_purchases==4){
+                footprint_points+=4;
+            }
+            else if(household_purchases==5){
+                footprint_points+=2;
+            }
+
+
+            //variable "waster_production" to store the amount of waste produced by an individual
+            var waste_production=document.getElementById("dropdown5").value;
+
+            if(waste_production==1){
+                footprint_points+=50;
+            }
+            else if(waste_production==2){
+                footprint_points+=40;
+            }
+            else if(waste_production==3){
+                footprint_points+=30;
+            }
+            else if(waste_production==4){
+                footprint_points+=20;
+            }
+            else if(waste_production==5){
+                footprint_points+=5;
+            }
+
+
+            //variable "recycle_waste" to store the amount of waste recycled by an individual
+            var recycle_waste=document.getElementById("dropdown6").value;
+
+            if(recycle_waste==1){
+                footprint_points+=24;
+            }
+            else if(recycle_waste==2){
+                footprint_points+=20;
+            }
+            else if(recycle_waste==3){
+                footprint_points+=16;
+            }
+            else if(recycle_waste==4){
+                footprint_points+=12;
+            }
+            else if(recycle_waste==5){
+                footprint_points+=8;
+            }
+            else if(recycle_waste==6){
+                footprint_points+=4;
+            }
+            else if(recycle_waste==7){
+                footprint_points+=0;
+            }
+
+
+            //variable "transportation_score" to store the annual distance travelled by the individual
+            var transportation_score=document.getElementById("dropdown7").value;
+
+            if(transportation_score==1){
+                footprint_points+=12;
+            }
+            else if(transportation_score==2){
+                footprint_points+=10;
+            }
+            else if(transportation_score==3){
+                footprint_points+=6;
+            }
+            else if(transportation_score==4){
+                footprint_points+=4;
+            }
+            else if(transportation_score==5){
+                footprint_points+=12;
+            }
+            else if(transportation_score==6){
+                footprint_points+=10;
+            }
+            else if(transportation_score==7){
+                footprint_points+=6;
+            }
+            else if(transportation_score==8){
+                footprint_points+=4;
+            }
+            else if(transportation_score==9){
+                footprint_points+=2;
+            }
+
+            alert("your Carbon Footprint points is: "+footprint_points);
+
+            if(footprint_points>=60){
+                alert("You are having quite an impact on planet Earth, you might want to consider to look out for some ways to reduce your impact on planet Earth.");
+            }
+            if(footprint_points<60){
+                alert("you are making small impact on planet Earth, try and reduce your carbon emissions further as far as possible.");
+            }
+        }
+    </script>
+</body>
+</html>
+

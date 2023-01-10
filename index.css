@@ -1,0 +1,72 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+#did_you_know_block{
+    background-color: rgb(66, 219, 219);
+    border-bottom:5px solid black;
+    margin-top:-2%;
+    padding:0px;
+}
+#source{
+    float:right;
+    margin:2%;
+    text-decoration: underline;
+    color:black;
+}
+#vietnam_id,#uk_id,#us_id{
+    margin-left:5%;
+}
+#block_3_source{
+    color:black;
+    text-decoration: underline;
+}
+#block_3_text{
+    margin-top:10%;
+}
+h1,h3{
+    text-align: center;
+
+}
+#input1{
+    border:2px solid black;
+}
+#individual{
+    margin-left:20%;
+}
+#small_business{
+    margin-left:20%;
+}
+#large_business{
+    margin-left:20%;
+}
+#survey{
+    margin-left:20%;
+}
+.col-sm-3:hover{
+    border:2px dotted green;
+    border-radius:25px;
+}
+#footer{
+    background-color:rgb(39, 38, 38);
+}
+
+.col-lg-3{
+    margin-top:4%;
+}
+.list{
+    text-decoration:none;
+    color:rgb(179, 174, 174);
+}
+.list:hover{
+    text-decoration:none;
+    color:rgb(59, 160, 243);
+}
+#email_btn{
+    background-color:rgb(59, 160, 243);
+    color:white;
+}
+#email_btn:hover{
+    background-color:white;
+    color:rgb(59, 160, 243);
+}

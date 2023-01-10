@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Business Carbon Footprint calculation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="small_business.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" class="img-responsive img-rounded"></a>
+            </div>
+
+           <!--collapse div-->
+           <div class="collapse navbar-collapse navbar-right" id="nav1">
+                 <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Form</a></li>
+                    <li><a href="#">More Information</a></li>
+                 </ul>
+             </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/business_sectors.jpeg" alt="business_sectors" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group text-center">
+                        <h3>Select your business sector</h3>
+                        <select name="" id="" class="form-control">
+                            <option value="">Hospitality</option>
+                            <option value="">Manufacturing</option>
+                            <option value="">Retail</option>
+                            <option value="">Professional Services</option>
+                        </select><br><br>
+                        <small>These are the most common</small>
+                        <small>amongst other 64 business sectors</small>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/electricity.jpeg" alt="electricity" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6 ">
+                    <div class="form-group text-center">
+                        <h3>What type of electricity does your business use?</h3><br>
+                        <select name="" id="" class="form-control">
+                            <option value="">Brown</option>
+                            <option value="">Greenwashed</option>
+                            <option value="">Deep Green</option>
+                            <option value="">I don't know</option>
+                        </select><br><br>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                    <img src="images/small_electricity.png" alt="small_electricity">
+                                    <h4>Electricity</h4>
+                                    <input type="text" placeholder="KWH" id="electricity">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/gas.png" alt="gas">
+                                <h4>Gas</h4>
+                                <input type="text" placeholder="KWH" id="gas">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="images/floor_tape.png" alt="floor_tape">
+                                <h4>Total floor area</h4>
+                                <input type="text" placeholder="SQ. FT." id="floor_area">
+                            </div>
+                        </div><br><br>
+                        <button class="btn btn-success" onclick="calculateFootprint()">CALCULATE & VIEW SUGGESTIONS</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div><br><br>
+
+     <!--footer section-->
+     <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <img src="images/logo.png" alt="logo" class="img img-responsive img-rounded" id="footer_logo"><br><br>
+                <h5 style="color:white">MyCarbon<sub>2</sub> is wholly dedicated to</h5>
+                <h5 style="color:white">to help individuals, small businesses &</h5>
+                <h5 style="color:white">big businesses to understand what exactly is</h5>
+                <h5 style="color:white">Carbon Footprint and how to cut the</h5>
+                <h5 style="color:white">carbon emissions to save planet Earth</h5><br>
+                <h6 style="color:white">Follow us on:</h6>
+                <a href="#/"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h3 style="color:white;">Learn about Carbon Footprint</h3>
+                <hr>
+                <ul style="color:white;list-style-type: none;">
+                    <a href="index.html" class="list"><li>Carbon Footprint overview</li></a><br>
+                    <a href="#" class="list"><li>Carbon Footprint survey</li></a><br>
+                    <a href="#" class="list"><li>Carbon Footprint by Country</li></a><br>
+                    <a href="#" class="list"><li>TED'x Talk: The Carbon Literacy Revolution</li></a>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h2 style="color:white;">Navigation</h2>
+                <hr>
+                <ul style="color:white; list-style-type: none;">
+                    <a href="index.html" class="list"><li>Home</li></a><br>
+                    <a href="#" class="list"><li>About Us</li></a><br>
+                    <a href="#" class="list"><li>Contact Us</li></a><br>
+                    <a href="#" class="list"><li>More Information</li></a>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h2 style="color:white;">Subscribe</h2>
+                <hr>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-Mail"><br>
+                        <button class="btn btn-default" id="email_btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function calculateFootprint(){
+            //variable "business_footprint" to store the carbon footprint of the business
+            var business_footprint=0;
+
+            //variable "electricity_consumption" to store the electricity consumption of the business in kWH
+            var electricity_consumption=document.getElementById("electricity").value;
+
+            if(electricity_consumption==""){
+                alert("please enter your electricity consumption in KWH");
+                return;
+            }
+
+            //variable "gas_consumption" to store the gas consumption of the business in KWH
+            var gas_consumption=document.getElementById("gas").value;
+            if(gas_consumption==""){
+                alert("please enter your gas consumption in KWH");
+                return;
+            }
+
+            //variable "property_size" to store the floor size of the business
+            var property_size=document.getElementById("floor_area").value;
+            if(property_size==""){
+                alert("please enter your floor area");
+                return;
+            }
+
+            var electricity_consumption_in_lbs=electricity_consumption*1.85;
+            business_footprint=electricity_consumption_in_lbs*0.0005;
+
+
+            var gas_consumption_in_lbs=gas_consumption*1.85;
+            business_footprint+=(gas_consumption_in_lbs*0.0005);
+
+            //printing the calculated individual carbon footprint in tons
+            alert("your Carbon Footprint is: "+business_footprint+" "+"tons");
+
+            if(business_footprint>=61){
+                alert("your Carbon Footprint is very high, please take appropriate measures to reduce it.");
+            }
+            else{
+                alert("your Carbon Footprint is reasonable, Keep it up!");
+            }
+ 
+            if(electricity_consumption>=15000){
+                alert("* Try and minimize the consumption of electricity, you can do so by adopting the following measures :\n 1) Keep control of your heating & cooling.\n 2) Reduced wastage.\n 3) Minimizing artificial lighting & replace existing lighting with a more efficient option.\n 3) Use energy saving features.\n 4) Switch off office equipment when not in use.\n 5) Make sure your equipments and systems are well maintained.\n 6) Update your heating & cooling systems.\n 7) Get your staff involved in the effort to save power.");
+            }
+            if(gas_consumption>=30000){
+                alert("* Try and minimize the consumption of gas");
+            }
+            
+        }
+    </script>
+</body>
+</html>

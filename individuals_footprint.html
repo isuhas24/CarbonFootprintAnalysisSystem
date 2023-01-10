@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="individuals_fooprint.css">
+    <title>Survey</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" class="img-responsive img-rounded"></a>
+            </div>
+
+           <!--collapse div-->
+           <div class="collapse navbar-collapse navbar-right" id="nav1">
+                 <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Form</a></li>
+                    <li><a href="#">More Information</a></li>
+                 </ul>
+             </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/type_of_car.png" alt="type_of_car" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group text-center">
+                        <h3>Select the type of car you own</h3><br>
+                        <select name="car_type" id="car_type" class="form-control">
+                            <option value="1">Hybrid or Electric vehicle</option>
+                            <option value="2">compact or economy-sized car</option>
+                            <option value="3">medium-sized car</option>
+                            <option value="4">large vahicle such as SUV or mini-truck</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/fuel.png" alt="fuels" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group text-center">
+                        <h3>Determine the total fuel usage of your vehicle</h3><br>
+                        <h4>Total miles driven:</h4>
+                        <input type="text" class="form-control" placeholder="e.g. 8000 miles" id="distance_driven"><br>
+                        <h4>Miles per gallon:</h4>
+                        <input type="text" class="form-control" placeholder="e.g. 40 mpg" id="miles_per_gallon">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/utility_bills.png" alt="utility_bills" class="img-responsive img-rounded">
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group text-center">
+                        <h3>Check your monthly utility bills</h3><br>
+                        <h4>Electricity:</h4> 
+                        <input type="text" class="form-control" placeholder="in KWH" id="electricity"><br>
+                        <h4>LPG:</h4>
+                        <input type="text" class="form-control" placeholder="in KWH" id="lpg"><br>
+                        <button class="btn btn-success" onclick="calculate_footprint()">CALCULATE & VIEW SUGGESTIONS</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div><br><br><br>
+
+     <!--footer section-->
+     <div class="container-fluid" id="footer">
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <img src="images/logo.png" alt="logo" class="img img-responsive img-rounded" id="footer_logo"><br><br>
+                <h5 style="color:white">MyCarbon<sub>2</sub> is wholly dedicated to</h5>
+                <h5 style="color:white">to help individuals, small businesses &</h5>
+                <h5 style="color:white">big businesses to understand what exactly is</h5>
+                <h5 style="color:white">Carbon Footprint and how to cut the</h5>
+                <h5 style="color:white">carbon emissions to save planet Earth</h5><br>
+                <h6 style="color:white">Follow us on:</h6>
+                <a href="#/"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h3 style="color:white;">Learn about Carbon Footprint</h3>
+                <hr>
+                <ul style="color:white;list-style-type: none;">
+                    <a href="index.html" class="list"><li>Carbon Footprint overview</li></a><br>
+                    <a href="#" class="list"><li>Carbon Footprint survey</li></a><br>
+                    <a href="#" class="list"><li>Carbon Footprint by Country</li></a><br>
+                    <a href="#" class="list"><li>TED'x Talk: The Carbon Literacy Revolution</li></a>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h2 style="color:white;">Navigation</h2>
+                <hr>
+                <ul style="color:white; list-style-type: none;">
+                    <a href="index.html" class="list"><li>Home</li></a><br>
+                    <a href="#" class="list"><li>About Us</li></a><br>
+                    <a href="#" class="list"><li>Contact Us</li></a><br>
+                    <a href="#" class="list"><li>More Information</li></a>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-center">
+                <h2 style="color:white;">Subscribe</h2>
+                <hr>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-Mail"><br>
+                        <button class="btn btn-default" id="email_btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--javascript function to calculate carbon footprint of an individual-->
+    <script>
+        //variable "footprint" to store the footprint of an individual based upon his/her input
+        var footprint=0;
+
+        //function "calculate_footprint to calculate individual carbon footprint"
+        function calculate_footprint(){
+            
+
+            footprint=0;
+            //variable "type_of_car" to store the type of car owned by the user, the value store in this variable is of type integer from 1-4
+            var type_of_car=document.getElementById("car_type").value;
+            if(type_of_car==1){
+                footprint+=2;
+            }
+            else if(type_of_car==2){
+                footprint+=5;
+            }
+            else if(type_of_car==3){
+                footprint+=9;
+            }
+            else if(type_of_car==4){
+                footprint+=12;
+            }
+            
+
+
+            
+            //variable "total_miles_driven" to store total number of miles driven by the individual
+            var miles=document.getElementById("distance_driven").value;
+            if(miles==""){
+                alert("please enter total distance travelled in miles");
+                return;
+            }
+            //variable "miles_per_gallon" to store the mileage in miles of vehicle
+            var miles_per_gallon=document.getElementById("miles_per_gallon").value;
+            if(miles_per_gallon==""){
+                alert("please enter miles per gallon of your vehicle i.e Mileage in miles");
+                return;
+            }
+            var total_fuel_usage=(miles/miles_per_gallon);
+            var total_fuel_usage_in_lbs=total_fuel_usage*22;
+            footprint+=(total_fuel_usage_in_lbs*0.0005);
+            
+
+
+            //variable "electricity" to store the electricty consumption of the individual
+            var electricity=document.getElementById("electricity").value;
+            if(electricity==""){
+                alert("please enter your electricity consumption in KWH");
+                return;
+            }
+            //variable "lpg_consumption" to store lpg consumption of the individual
+            var lpg_consumption=document.getElementById("lpg").value;
+            if(lpg_consumption==""){
+                alert("please enter your LPG consumption in KWH");
+                return;
+            }
+            var electricity_usage_in_lbs=electricity*1.85;
+            footprint+=(electricity_usage_in_lbs*0.0005);
+            var lpg_consumption_in_lbs=lpg_consumption*1.85;
+            footprint+=(lpg_consumption_in_lbs*0.0005);
+
+            //printing the calculated individual carbon footprint in tons
+            alert("your Carbon Footprint is: "+footprint+" "+"tons");
+
+            if(footprint==0){
+                alert("please enter the data");
+                return;
+            }
+            if(type_of_car!=4 && miles<7457 && electricity<10909 && lpg_consumption<1022){
+                alert("your Carbon Footprint is reasonable, Keep it up!");
+            }
+            else{
+                alert("your Carbon Footprint is high, you need to adopt the appropriate measures to minimize it");
+            }
+            if(type_of_car==4){
+                alert("* Try and switch to Electric vehicle or compact or economy sized car");
+            }
+            if(miles>=7457){
+                alert("* If possible try and minimize the usage of personal vehicle and use public transport");
+            }
+            if(electricity>=10909){
+                alert("* Try and minimize the consumption of electricity, you can do so by adopting the following measures :\n 1) Replace old bulbs with LEDs.\n 2) Keep rating in mind while buying things.\n 3) Don't forget to turn off the appliance when you're done.\n 4) Run AC at 24 degrees temperature only.\n 5) Use power strips for multiple gadgets.");
+            }
+            if(lpg_consumption>=1022){
+                alert("* Try and minimize the consumption of LPG, you can do so by adopting the following measures :\n 1) Checks for leaks.\n 2) Don't overcook.\n 3) Use low heat.\n 4) Measure what you cook.\n 5) Clean the burners.\n 6) Use the right cookware.\n 7) If possible switch to electric stove.");
+            }
+            
+        }
+    </script>
+</body>
+</html>
